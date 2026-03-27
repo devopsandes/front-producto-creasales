@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronDown, Globe, Star, ArrowRight, CheckCircle2, MessageSquare, Phone, Mail, Search, Info, Check, Sparkles, X, Download, Instagram, Linkedin } from 'lucide-react';
+import ChatWidget from './ChatWidget';
 
 export default function RespondHome() {
   const [activeTab, setActiveTab] = useState('All');
@@ -542,6 +543,9 @@ export default function RespondHome() {
         </footer>
 
       </div>
+
+      {/* Chatbot flotante */}
+      <ChatWidget />
     </div>
   );
 }
