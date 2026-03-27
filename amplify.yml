@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd front-creasales
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: front-creasales/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - front-creasales/node_modules/**/*
