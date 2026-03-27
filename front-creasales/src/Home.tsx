@@ -80,45 +80,45 @@ export default function RespondHome() {
 
           <div className="max-w-[1600px] mx-auto px-6 lg:pl-12 lg:pr-8 w-full h-full flex items-center justify-between relative">
             {/* Logo */}
-            <div className="flex items-center font-extrabold text-[22px] tracking-tight cursor-pointer text-slate-900 shrink-0 lg:ml-20 xl:ml-[250px]">
+            <div className="flex items-center font-extrabold text-[22px] tracking-tight cursor-pointer text-slate-900 shrink-0 lg:ml-4 xl:ml-10">
               creasales
             </div>
 
             {/* Enlaces de navegación (Centrados) */}
             <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-semibold text-slate-600 h-full tracking-tight absolute left-1/2 -translate-x-1/2">
-                <div className="relative group h-full flex items-center">
-                  <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
-                    Producto <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
-                  </button>
-                  <div className="absolute top-full left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 w-64 bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] border border-gray-100 p-2 z-50">
-                    <a href="#" className="block px-4 py-3 hover:bg-gray-50 rounded-lg text-slate-800 text-sm font-semibold transition-colors">Bandeja Omnicanal</a>
-                    <a href="#" className="block px-4 py-3 hover:bg-gray-50 rounded-lg text-slate-800 text-sm font-semibold transition-colors">Agentes IA</a>
-                  </div>
+              <div className="relative group h-full flex items-center">
+                <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
+                  Producto <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
+                </button>
+                <div className="absolute top-full left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 w-64 bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] border border-gray-100 p-2 z-50">
+                  <a href="#" className="block px-4 py-3 hover:bg-gray-50 rounded-lg text-slate-800 text-sm font-semibold transition-colors">Bandeja Omnicanal</a>
+                  <a href="#" className="block px-4 py-3 hover:bg-gray-50 rounded-lg text-slate-800 text-sm font-semibold transition-colors">Agentes IA</a>
                 </div>
-                <div className="relative group h-full flex items-center">
-                  <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
-                    Industrias <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
-                  </button>
-                </div>
-                <div className="relative group h-full flex items-center">
-                  <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
-                    Recursos <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
-                  </button>
-                </div>
-                <a href="#" className="hover:text-[#0066FF] transition-colors h-full flex items-center">Precios</a>
-                <a href="#" className="hover:text-[#0066FF] transition-colors h-full flex items-center">Por qué nosotros</a>
+              </div>
+              <div className="relative group h-full flex items-center">
+                <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
+                  Industrias <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
+                </button>
+              </div>
+              <div className="relative group h-full flex items-center">
+                <button className="flex items-center gap-1.5 hover:text-[#0066FF] transition-colors h-full focus:outline-none">
+                  Recursos <ChevronDown size={14} className="group-hover:-rotate-180 transition-transform duration-300" />
+                </button>
+              </div>
+              <a href="#" className="hover:text-[#0066FF] transition-colors h-full flex items-center">Precios</a>
+              <a href="#" className="hover:text-[#0066FF] transition-colors h-full flex items-center">Por qué nosotros</a>
             </div>
 
             {/* Acciones a la derecha */}
             <div className="hidden lg:flex items-center gap-4 xl:gap-5 shrink-0">
               <a href="#" className="text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors mr-1">Iniciar Sesión</a>
-              
+
               <button className="px-6 py-2.5 text-[14px] font-bold rounded bg-gradient-to-r from-blue-100/90 via-indigo-100/70 to-purple-100/90 hover:from-blue-200/80 hover:via-indigo-200/60 hover:to-purple-200/80 border border-slate-200/80 shadow-sm text-slate-800 hover:text-slate-900 transition-all duration-300 tracking-wide">
                 Hablar con Ventas
               </button>
-              
+
               <div className="h-5 w-[1px] bg-slate-200 mx-1 hidden xl:block"></div>
-              
+
               <button className="text-slate-500 hover:text-slate-900 flex items-center gap-1.5 p-1 transition-colors group">
                 <Globe size={18} className="group-hover:rotate-12 transition-transform" />
                 <span className="text-xs font-bold tracking-wider uppercase">ES</span>
@@ -520,22 +520,24 @@ export default function RespondHome() {
         </div>
 
         {/* Espacio divisor sin nada */}
-        <div className="h-32 md:h-48 w-full shrink-0"></div>
-        
+        <div className="h-12 md:h-16 w-full shrink-0"></div>
+
         {/* Footer simple, finito y un poco más oscuro */}
-        <footer className="w-full py-6 mt-20 border-t border-slate-200 bg-slate-50 flex justify-center">
+        <footer className="w-full py-6 mt-8 border-t border-slate-200 bg-slate-50 flex justify-center">
           <div className="max-w-[1600px] w-full px-6 lg:px-12 flex flex-row items-center justify-between">
-            <div className="flex items-center gap-6">
-              <a href="#" className="text-slate-500 hover:text-[#E1306C] transition-colors" title="Instagram">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="text-slate-500 hover:text-[#0077B5] transition-colors" title="LinkedIn">
-                <Linkedin size={18} />
-              </a>
-            </div>
+
             <p className="text-slate-500 text-[13px] font-semibold tracking-tight">
               Creasales todos los derechos reservados.
             </p>
+            {/* Social Links */}
+            <div className="flex items-center gap-5">
+              <a href="#" className="text-slate-400 hover:text-[#E83A82] transition-all duration-300 hover:scale-110">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-[#0066FF] transition-all duration-300 hover:scale-110">
+                <Linkedin size={20} />
+              </a>
+            </div>
           </div>
         </footer>
 
