@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 
 const allowedOrigins = [
-  'https://main.d1vj80myff1zzs.amplifyapp.com',
+  'https://main.d1oz19b6a7gg7i.amplifyapp.com',
   'https://creasales.com',
   'https://www.creasales.com',
   'http://localhost:5173',
@@ -108,12 +108,12 @@ app.post('/api/chat', async (req, res) => {
 
     await withTrace('Creasales', async () => {
       const runner = new Runner({
-      traceMetadata: {
-        __trace_source__: 'agent-builder',
-        workflow_id: process.env.OPENAI_AGENT_ID
-      }
-    });
-    const result = await runner.run(creasalesAgent, convo.history);
+        traceMetadata: {
+          __trace_source__: 'agent-builder',
+          workflow_id: process.env.OPENAI_AGENT_ID
+        }
+      });
+      const result = await runner.run(creasalesAgent, convo.history);
       convo.history.push(...result.newItems.map(item => item.rawItem));
 
       finalReply = result.finalOutput || '';
