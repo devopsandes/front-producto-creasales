@@ -207,7 +207,7 @@ export default function RespondHome() {
                     <div className="absolute right-6 bottom-8 w-6 h-6 bg-blue-900 rounded flex items-center justify-center p-1"><Globe size={12} color="white" /></div>
                   </div>
 
-                  <h2 className="text-[22px] font-bold text-slate-900 mb-3 tracking-tight">Descubre el poder de Respond.io</h2>
+                  <h2 className="text-[22px] font-bold text-slate-900 mb-3 tracking-tight">Descubre el poder de Creasales</h2>
                   <p className="text-slate-500 mb-8 text-[14px] leading-relaxed">
                     Vende de forma más inteligente, fortalece relaciones y responde más rápido. Todo desde una sola bandeja. Experimenta cómo funciona al instante.
                   </p>
