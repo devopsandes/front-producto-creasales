@@ -139,7 +139,7 @@ export default function RespondHome() {
           </div>
 
           <h1 className="animate-fade-up animate-delay-100 opacity-0 text-[42px] md:text-[68px] font-extrabold tracking-tight text-[#111827] max-w-[1050px] leading-[1.05] w-full px-4">
-            Los clientes preguntan por chat. Llaman para detalles. Confirman por email. ¿Puedes seguir el ritmo?
+            Cada lead sin respuesta es dinero que perdés. Creasales lo captura, lo sigue y lo convierte.
           </h1>
 
           {/* Espaciador forzado para alejar el boton del titulo */}
@@ -207,9 +207,9 @@ export default function RespondHome() {
                     <div className="absolute right-6 bottom-8 w-6 h-6 bg-blue-900 rounded flex items-center justify-center p-1"><Globe size={12} color="white" /></div>
                   </div>
 
-                  <h2 className="text-[22px] font-bold text-slate-900 mb-3 tracking-tight">Descubre el poder de Creasales</h2>
+                  <h2 className="text-[22px] font-bold text-slate-900 mb-3 tracking-tight">Tu equipo de ventas, potenciado por IA</h2>
                   <p className="text-slate-500 mb-8 text-[14px] leading-relaxed">
-                    Vende de forma más inteligente, fortalece relaciones y responde más rápido. Todo desde una sola bandeja. Experimenta cómo funciona al instante.
+                    Creasales centraliza WhatsApp, email y redes sociales en una sola bandeja. Automatizá seguimientos, gestioná tickets y cerrá más ventas sin perder ningún contacto.
                   </p>
                   <button onClick={() => setShowTour(false)} className="bg-black hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 animate-pulse-glow w-full md:w-auto">
                     <Sparkles size={16} className="text-yellow-400" />
@@ -321,10 +321,10 @@ export default function RespondHome() {
           {/* Columna Izquierda (Textos y Acordeón) */}
           <div className="w-full lg:w-[45%] flex flex-col">
             <h2 className="text-[32px] md:text-[40px] leading-[1.15] font-extrabold tracking-tight mb-6 text-slate-900">
-              Escala el crecimiento de tu negocio con cada conversación
+              De cada conversación nace una oportunidad. No pierdas ninguna.
             </h2>
             <p className="text-slate-600 text-[16px] leading-relaxed mb-10">
-              A medida que los chats y llamadas se multiplican, las bandejas viejas y flujos de trabajo se rompen. El framework de Crecimiento Liderado por Conversaciones de Respond.io te ayuda a gestionar todo el viaje del cliente a través de cada canal y en un solo lugar, incluso con altos volúmenes.
+              Cuando el volumen crece, los equipos pierden el hilo. Creasales organiza cada interacción en una sola plataforma: seguimiento de leads, tickets de soporte y automatización comercial, todo sincronizado en tiempo real.
             </p>
 
             <div className="flex flex-col gap-6">
@@ -333,10 +333,10 @@ export default function RespondHome() {
                 className={`flex flex-col border-l-[3px] pl-6 cursor-pointer transition-all duration-300 ${activeFeature === 'capture' ? 'border-[#0066FF] opacity-100' : 'border-gray-200 opacity-60 hover:opacity-100'}`}
                 onClick={() => setActiveFeature('capture')}
               >
-                <h3 className="font-bold text-[17px] mb-3 text-slate-900 tracking-tight">Captura: Unifica puntos de contacto para impulsar ingresos</h3>
+                <h3 className="font-bold text-[17px] mb-3 text-slate-900 tracking-tight">Capturá: Centralizá todos tus leads en un solo lugar</h3>
                 {activeFeature === 'capture' && (
                   <p className="text-slate-600 text-[14px] leading-relaxed animate-fade-up">
-                    Los leads vienen de todas partes — chats de WhatsApp, anuncios de TikTok, mensajes de Facebook o visitas a la tienda. Respond.io los unifica en una bandeja de equipo para que ninguna oportunidad pase desapercibida. Trabaja con perfiles limpios y organizados que se sincronizan con tus CRMs para un seguimiento rápido.
+                    Los leads llegan por WhatsApp, Instagram, email o formularios web. Creasales los captura todos en una bandeja de equipo unificada. Sin perder mensajes, sin duplicar contactos. Cada oportunidad, organizada y lista para convertirse en venta.
                   </p>
                 )}
               </div>
@@ -346,7 +346,12 @@ export default function RespondHome() {
                 className={`flex flex-col border-l-[3px] pl-6 cursor-pointer transition-all duration-300 ${activeFeature === 'convert' ? 'border-[#0066FF] opacity-100' : 'border-gray-200 opacity-60 hover:opacity-100'}`}
                 onClick={() => setActiveFeature('convert')}
               >
-                <h3 className="font-bold text-[17px] text-slate-900 tracking-tight">Convierte: Vende más con IA y analítica</h3>
+                <h3 className="font-bold text-[17px] mb-3 text-slate-900 tracking-tight">Convertí: Automatizá el seguimiento y cerrá más ventas</h3>
+                {activeFeature === 'convert' && (
+                  <p className="text-slate-600 text-[14px] leading-relaxed animate-fade-up">
+                    La IA de Creasales responde en segundos, califica leads automáticamente y asigna conversaciones al agente correcto. Tu equipo se enfoca en cerrar, no en administrar.
+                  </p>
+                )}
               </div>
 
               {/* Accordion Item 3 */}
@@ -354,7 +359,12 @@ export default function RespondHome() {
                 className={`flex flex-col border-l-[3px] pl-6 cursor-pointer transition-all duration-300 ${activeFeature === 'retain' ? 'border-[#0066FF] opacity-100' : 'border-gray-200 opacity-60 hover:opacity-100'}`}
                 onClick={() => setActiveFeature('retain')}
               >
-                <h3 className="font-bold text-[17px] text-slate-900 tracking-tight">Retiene: Construye ingresos recurrentes, no solo únicas ventas</h3>
+                <h3 className="font-bold text-[17px] mb-3 text-slate-900 tracking-tight">Fidelizá: Convertí clientes en compradores recurrentes</h3>
+                {activeFeature === 'retain' && (
+                  <p className="text-slate-600 text-[14px] leading-relaxed animate-fade-up">
+                    Con historial completo por cliente, tickets de soporte resueltos a tiempo y campañas automatizadas, Creasales te ayuda a mantener relaciones que generan ingresos mes a mes.
+                  </p>
+                )}
               </div>
             </div>
           </div>
@@ -506,13 +516,13 @@ export default function RespondHome() {
                   <Download size={14} /> Bandeja Omnicanal
                 </div>
                 <h2 className="text-[32px] md:text-[38px] leading-[1.12] font-extrabold text-slate-900 mb-6 tracking-tight">
-                  Chats, llamadas y correos en un solo hilo
+                  Todos tus canales. Un solo lugar. Cero caos.
                 </h2>
                 <p className="text-slate-600 text-[16px] mb-5 leading-relaxed">
-                  Respond.io unifica <span className="font-bold text-slate-900">llamadas de WhatsApp Business, Messenger</span> y <span className="font-bold text-slate-900">VoIP</span> en el mismo hilo que tus mensajes y correos.
+                  Creasales unifica <span className="font-bold text-slate-900">WhatsApp Business, Instagram, Messenger</span> y <span className="font-bold text-slate-900">email</span> en un mismo hilo de conversación por cliente.
                 </p>
                 <p className="text-slate-500 text-[15px] leading-relaxed">
-                  No más silos ni malabares entre plataformas; solo un registro confiable para cada cliente, sin importar el canal.
+                  Tu equipo siempre sabe qué se habló, cuándo y por dónde. Sin cambiar de app, sin perder contexto, sin errores.
                 </p>
               </div>
             </div>
